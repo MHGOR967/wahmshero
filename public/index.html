@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>وهم شيرلوك V70 — العدسة الذهبية | البحث العكسي بالصور</title>
+    <meta name="description" content="أقوى أداة بحث عكسي بالصور وتقنية التعرف على الوجوه في العالم العربي. وهم شيرلوك V70 يبحث في ملايين الصور عبر جميع منصات التواصل الاجتماعي.">
+    <meta name="keywords" content="البحث عبر صوره, وهم البحث بالصوره, كشف صوره, البحث بالصور, reverse image search, facial recognition">
+    <meta name="theme-color" content="#C8A45A">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>">
+</head>
+
+<body>
+    <!-- PRELOADER -->
+    <div id="preloader" class="preloader">
+        <div class="preloader__inner">
+            <div class="preloader__logo">
+                <svg class="preloader__sherlock-icon" viewBox="0 0 120 120" width="80" height="80">
+                    <defs>
+                        <linearGradient id="goldGradPreloader" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#D4AF37"/>
+                            <stop offset="50%" style="stop-color:#F5D76E"/>
+                            <stop offset="100%" style="stop-color:#C8A45A"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="30" fill="none" stroke="url(#goldGradPreloader)" stroke-width="3"/>
+                    <line x1="72" y1="72" x2="100" y2="100" stroke="url(#goldGradPreloader)" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="preloader__text">
+                <span class="preloader__brand">WAHM SHERLOCK</span>
+                <span class="preloader__version">V70 — Golden Lens</span>
+            </div>
+            <div class="preloader__status">جاري تهيئة محرك البحث...</div>
+        </div>
+    </div>
+
+    <!-- PARTICLES CANVAS -->
+    <canvas id="particlesCanvas" class="particles-canvas"></canvas>
+
+    <!-- MAIN WRAPPER -->
+    <div id="appWrapper" class="app-wrapper">
+        
+        <!-- NAVBAR -->
+        <nav class="navbar" id="navbar">
+            <div class="navbar__container">
+                <div class="navbar__brand">
+                    <div class="navbar__logo-wrapper">
+                        <svg class="navbar__logo-svg" viewBox="0 0 40 40" width="36" height="36">
+                            <defs>
+                                <linearGradient id="navGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#D4AF37"/>
+                                    <stop offset="100%" style="stop-color:#F5D76E"/>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="17" cy="17" r="12" fill="none" stroke="url(#navGold)" stroke-width="2.5"/>
+                            <line x1="26" y1="26" x2="36" y2="36" stroke="url(#navGold)" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                        <div class="navbar__brand-text">
+                            <span class="navbar__brand-name">وهم شيرلوك</span>
+                            <span class="navbar__brand-version">V70 — العدسة الذهبية</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="navbar__links">
+                    <a href="#home" class="navbar__link navbar__link--active" data-section="home">
+                        <i class="fas fa-home"></i>
+                        <span>الرئيسية</span>
+                    </a>
+                    <a href="#scanner" class="navbar__link" data-section="scanner">
+                        <i class="fas fa-crosshairs"></i>
+                        <span>الماسح</span>
+                    </a>
+                    <a href="#results" class="navbar__link" data-section="results">
+                        <i class="fas fa-chart-bar"></i>
+                        <span>النتائج</span>
+                    </a>
+                </div>
+                
+                <div class="navbar__actions">
+                    <button class="navbar__btn navbar__btn--theme" id="btnTheme" title="تبديل السمة">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="hero__container">
+                <div class="hero__badge">
+                    <i class="fas fa-shield-halved"></i>
+                    <span>نظام ذكاء اصطناعي متقدم — الإصدار 70</span>
+                </div>
+                
+                <h1 class="hero__title">
+                    <span class="hero__title-line hero__title-line--1">وهم</span>
+                    <span class="hero__title-line hero__title-line--2">شيرلوك</span>
+                    <span class="hero__title-line hero__title-line--3">
+                        <span class="hero__title-version">V70</span>
+                        <span class="hero__title-edition">العدسة الذهبية</span>
+                    </span>
+                </h1>
+                
+                <p class="hero__subtitle">
+                    أقوى محرك بحث عكسي بالصور في العالم العربي. تقنية التعرف على الوجوه بالذكاء الاصطناعي
+                    <br>تبحث في ملايين الصور عبر جميع المنصات
+                </p>
+                
+                <div class="hero__actions">
+                    <a href="#scanner" class="hero__btn hero__btn--primary">
+                        <i class="fas fa-search"></i>
+                        <span>ابدأ البحث الآن</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCANNER SECTION -->
+        <section id="scanner" class="scanner">
+            <div class="scanner__container">
+                <div class="scanner__header">
+                    <h2 class="scanner__title">
+                        <i class="fas fa-crosshairs"></i>
+                        الماسح الذكي
+                    </h2>
+                    <p class="scanner__desc">ارفع صورة أو الصقها أو اسحبها هنا لبدء عملية البحث والتحليل</p>
+                </div>
+                
+                <!-- Upload Zone -->
+                <div class="scanner__upload-zone" id="uploadZone">
+                    <div class="scanner__upload-inner">
+                        <div class="scanner__upload-icon">
+                            <svg viewBox="0 0 80 80" width="80" height="80">
+                                <defs>
+                                    <linearGradient id="uploadGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#D4AF37"/>
+                                        <stop offset="100%" style="stop-color:#F5D76E"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect x="10" y="25" width="60" height="45" rx="5" fill="none" stroke="url(#uploadGold)" stroke-width="2"/>
+                                <polyline points="30,45 40,32 50,45" fill="none" stroke="url(#uploadGold)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="40" y1="32" x2="40" y2="60" stroke="url(#uploadGold)" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="scanner__upload-title">اسحب الصورة هنا أو انقر للرفع</h3>
+                        <p class="scanner__upload-subtitle">JPG, PNG, GIF, WEBP — حتى 15MB</p>
+                        <input type="file" id="fileInput" accept="image/*" style="display:none">
+                    </div>
+                </div>
+
+                <!-- Preview & Visualization -->
+                <div class="scanner__visualization" id="scannerViz" style="display:none;">
+                    <div class="scanner__preview-ring" id="previewRing">
+                        <img id="previewImage" class="scanner__preview-img" src="" alt="معاينة الصورة">
+                        <div id="previewPlaceholder" class="scanner__preview-placeholder"></div>
+                    </div>
+                </div>
+
+                <!-- Status Panel -->
+                <div class="scanner__status-panel" id="statusPanel" style="display:none;">
+                    <div class="scanner__status-dot scanner__status-dot--idle" id="statusDot"></div>
+                    <div class="scanner__status-text" id="statusText">في انتظار الصورة...</div>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="scanner__progress" id="progressBar" style="display:none;">
+                    <div class="scanner__progress-fill" id="progressFill"></div>
+                    <div class="scanner__progress-text" id="progressText">0%</div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="scanner__actions" id="scannerActions" style="display:none;">
+                    <button class="scanner__btn scanner__btn--primary" id="btnStartScan" disabled>
+                        <i class="fas fa-play"></i>
+                        بدء المسح
+                    </button>
+                    <button class="scanner__btn scanner__btn--secondary" id="btnReset" style="display:none;">
+                        <i class="fas fa-redo"></i>
+                        إعادة تعيين
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESULTS SECTION -->
+        <section id="results" class="results" style="display:none;">
+            <div class="results__container">
+                <div class="results__header">
+                    <h2 class="results__title">النتائج</h2>
+                    <div class="results__summary">
+                        <span>عدد النتائج: <strong id="totalResults">0</strong></span>
+                        <span>وقت البحث: <strong id="searchTime">0s</strong></span>
+                    </div>
+                </div>
+
+                <div class="results__filters">
+                    <button class="results__filter results__filter--active" data-filter="all">الكل</button>
+                    <button class="results__filter" data-filter="high">عالية التطابق</button>
+                    <button class="results__filter" data-filter="instagram">Instagram</button>
+                    <button class="results__filter" data-filter="tiktok">TikTok</button>
+                    <button class="results__filter" data-filter="youtube">YouTube</button>
+                    <button class="results__filter" data-filter="facebook">Facebook</button>
+                </div>
+
+                <div class="results__grid" id="resultsGrid"></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- TOAST CONTAINER -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
